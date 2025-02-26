@@ -9,3 +9,11 @@ variable "zone_id" {
 variable "domain_name" {
   default = "charankandukuri.site"
 }
+
+variable "common_tags" {
+  type = map
+  default = {
+    project = "expense"
+    environment = "dev"
+  }
+}
